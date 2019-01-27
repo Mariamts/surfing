@@ -1,0 +1,16 @@
+body{
+	padding: 40px;
+}
+
+.navbar-collapse{
+	margin-left: 190px;
+}
+
+.container{
+	margin-top:60px;
+}
+
+.container h1{
+    font-size: 15px;
+    word-wrap: break-word;
+}
