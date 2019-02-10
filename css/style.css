@@ -1,10 +1,26 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+
 body{
 	padding: 40px;
+	font-family: 'Dosis', sans-serif;
+	background-image: url(https://uploads-ssl.webflow.com/58f24ff59590171867ff6fe6/58f2500e20b1d874186925b0_Lines.png);
 }
+
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
 
 .navbar-collapse{
 	margin-left: 190px;
 }
+
+
+/*home section*/
 
 .container{
 	margin-top:60px;
@@ -14,3 +30,334 @@ body{
     font-size: 15px;
     word-wrap: break-word;
 }
+
+.header-img{
+	height: 520px;
+	width: 1170px;
+}
+
+.jumbotron {
+  background-color: white;
+  color: black;
+  padding: 90px 25px;
+}
+
+.container-fluid {
+  padding: 50px 40px;
+}
+
+.your{
+	color: lightblue;
+}
+
+.shadow{
+	 -webkit-box-shadow:0 30px 100px 0;
+	         box-shadow:0 30px 100px 0;
+}
+
+.header-title{
+	font-size : 60px;
+	white-space: nowrap
+}
+
+.intro {
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .intro .intro-img {
+    width: 75%;
+    float: right;
+  }
+  .intro .intro-text {
+    left: 0;
+    width: 60%;
+    margin-top: 3rem;
+    position: absolute;
+  }
+}
+
+.section-heading {
+  text-transform: uppercase;
+}
+
+.section-heading .section-heading-upper {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.section-heading .section-heading-lower {
+  display: block;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.rotate-first{
+	-webkit-transform: rotate(-90deg);
+	    -ms-transform: rotate(-90deg);
+	        transform: rotate(-90deg);
+    float: right;
+    margin-top: -500px;
+}
+
+.rotate{
+	-webkit-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+    float: right;
+    margin-top: -500px;
+}
+
+.flex{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.first-icons-ul{
+	margin-left: 590px;
+}
+
+.icons-li{
+	margin-top: 490px;
+	margin-left: 50px;
+}
+
+.icons{
+	margin-left: 50px;
+}
+
+
+
+
+/*lines*/
+
+.line {
+  border-left: 6px solid lightblue;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  margin-bottom: 60px;
+  margin-top: 50px;
+}
+
+.horizontal-line{
+	 width:10%;
+	 height:1px;
+	 border-top:5px solid lightblue;
+	 margin-left: 70px;
+	 margin-bottom: 40px;
+
+}
+
+
+
+.page-section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+
+/*second section*/
+
+
+
+.container {
+  float: left;
+}
+
+.right {
+  float:left;
+  margin-top: 160px;
+  margin-left: -290px;
+}
+
+.padding-text{
+	margin-left: 40px;
+	padding: 30px;
+}
+
+.bttn{
+	border: 2px solid white;
+	background-color: white;
+	border-bottom-color: lightblue;
+	margin-left: 90px;
+}
+
+.image-to-move{
+	margin-left: 150px;
+}
+
+.color{
+	color: #75787c;
+}
+
+.video{
+	width: 500px;
+	height: 300px;
+}
+
+/*section three*/
+
+
+.jumbotron{
+	background-color: white;
+	color: black;
+	width: 99%
+}
+
+.shop{
+	color: lightblue;
+	width: 93%;
+	margin-left: 20px;
+}
+
+.thumbnail {
+  padding: 0 0 0 0;
+  border: none;
+  border-radius: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+
+.name{
+  margin-top:250px;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis; 
+  overflow: hidden; 
+  white-space: nowrap;
+  width: 100%;
+  font-size: 20px;
+}
+
+.show-more{
+	margin-left: 30px;
+}
+
+
+
+/*section seven*/
+
+
+.move-left{
+	float: left;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.nav{
+	width: 500px;
+	margin-left: 650px;
+}
+
+.navbar{
+	margin-right: 90px;
+}
+
+.icons-ul{
+	margin-left: 590px;
+}
+
+.twit{
+	width: 30px;
+}
+
+.vimeo{
+	width: 30px;
+}
+
+.tumblr{
+  width: 20px;
+}
+
+/*--------------------------------------------------------------
+# Responsive Media Queries
+--------------------------------------------------------------*/
+
+@media (max-width: 992px) {
+  .intro .intro-img {
+    width: 75%;
+    float: right;
+  }
+  .intro .intro-text {
+    left: 0;
+    width: 60%;
+    margin-top: 3rem;
+    position: absolute;
+  }
+  .intro .intro-text .intro-button {
+    width: 100%;
+    left: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
+
+}
+
+
+
+@media (max-width: 1200px) {
+  .intro .intro-text {
+    width: 45%;
+  }
+}
+ 
+/*animations*/
+
+.loggo{
+	transition-duration: 0.5s;
+
+}
+
+.loggo:hover{
+	transform: rotate(360deg);
+}
+
+.social-link img:hover{
+	transform: scale(1.3);
+}
+
+
+.logo{
+	animation:anim 5s infinite 0.2s; 
+}
+
+@keyframes anim{
+	0%{
+
+		transition: width 2s, height 2s, transform 2s;
+	}
+
+	50%{
+		transform: rotate(360deg);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
