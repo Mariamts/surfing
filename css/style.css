@@ -203,6 +203,11 @@ body{
 	height: 300px;
 }
 
+.container-again{
+	padding: 30px;
+}
+
+
 /*section three*/
 
 
@@ -302,14 +307,13 @@ body{
     margin-top: 3rem;
     position: absolute;
   }
-  .intro .intro-text .intro-button {
-    width: 100%;
-    left: 0;
-    position: absolute;
-    bottom: -2rem;
+  .rotate-text{
+  	display: none;
   }
-
-}
+  .containerr{
+  	display: none;
+  }
+  
 
 
 
@@ -318,6 +322,20 @@ body{
     width: 45%;
   }
 }
+
+@media only screen and (min-width: 768px){
+	.first{
+		width: 33.33%
+	}
+    .second{
+    	width: 33.33%
+    }
+    .third{
+    	width: 33.33%
+    }
+}
+
+
  
 /*animations*/
 
@@ -350,6 +368,9 @@ body{
 	}
 
 }
+
+
+
 
 
 
