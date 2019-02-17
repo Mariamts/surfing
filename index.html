@@ -5,6 +5,7 @@
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="script.js">
 	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<title>Surfing</title>
@@ -31,7 +32,7 @@
 	          BOARDS
 	        </a>
 	        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-	          <a class="dropdown-item" href="#surfboards">CHilli rare bird</a>
+	          <a class="dropdown-item" href="#surfboards">Chilli rare bird</a>
 	          <a class="dropdown-item" href="#surfboards">Emery NEM XF</a>
 	          <a class="dropdown-item" href="#surfboards">Agency GROOM</a>
 	        </div>
@@ -40,7 +41,7 @@
 	</nav>
  		 <section class="page-section clearfix" id="home">
       <div class="container">
-        <div class="intro">
+        <div class="intro main">
           <img class="intro-img img-fluid mb-3 mb-lg-0 rounded header-img shadow" src="img/first.jpg" alt="big-wave">
           <div class="intro-text left-0 text-center bg p-5 rounded">
             <h2 class="section-heading mb-4">
@@ -59,12 +60,12 @@
       <ul class="list-inline flex mb-5 first-icons-ul ">
         <li class="list-inline-item icons-li">
         	<a class="social-link rounded-circle text-white" href="https://twitter.com/">
-            <img class="twit" src="img/twit.svg" alt="twitter">
+            <img class="twit twit-icon" src="img/twit.svg" alt="twitter">
           </a>
         </li>
         <li class="list-inline-item icons">
           <a class="social-link rounded-circle text-white mr-3" href="https://www.tumblr.com/">
-            <img class="tumblr" src="img/tumblr.svg" alt="tumblr">
+            <img class="tumblr tumb-icon" src="img/tumblr.svg" alt="tumblr">
           </a>
         </li>
         <li class="list-inline-item icons">
@@ -82,15 +83,15 @@
 	    	<div class="line"></div>
 	    </div>
  		<div class="container box">
-		  <div class="row">
+		  <div class="row zoma">
 		    <div class="col left">
-		      <img src="img/left.jpg" alt="image">
-		      <p class="mb-3 text-md-left padding-text">one of the greatest things about the sport at sufring <br> you need only three things: your body,<br> a surfboard and a wave.
+		      <img class="picture" src="img/left.jpg" alt="image">
+		      <p class="mb-3 text-md-left padding-text video-text">one of the greatest things about the sport at sufring <br> you need only three things: your body,<br> a surfboard and a wave.
             </p>
-            <button type="button" class="bttn btn-light">R E A D   M O R E</button>
+            <button type="button" class="bttn btn-light video-button">R E A D   M O R E</button>
 		    </div>
 		    <div class="col right">
-		      <video width="700" height="400" controls>
+		      <video class="video" controls>
   				<source src="video/surf.mp4" type="video/mp4">
 			  </video>
 		    </div>
@@ -101,30 +102,30 @@
 		  <p class="shop">SHOP</p>
 		  <h1>SURFBOARDS</h1>  
 	    </div>
-	    <div class="container-fluid text-center bg-grey">
-		  <div class="row text-center">
+	    <div class="container-fluid text-center bg-grey boards">
+		  <div class="row text-center boardz">
 		    <div class="col-sm-4 first">
 		      <div class="thumbnail test">
-		        <img src="img/chilli.png" alt="surfboard">
+		        <img class="surfboard-rotate" src="img/chilli.png" alt="surfboard">
 		        <p class="name"><strong>Chilli Rare Bird<br>$890<br><a href="#">BUY</a></strong></p>
 		      </div>
 		    </div>
 		    <div class="col-sm-4 second">
 		      <div class="thumbnail test">
-		        <img class="board" src="img/groom.png" alt="surfing">
+		        <img class="board surfboard-rotate"" src="img/groom.png" alt="surfing">
 		        <p class="name"><strong>Emery NEM XF<br>$950<br><a href="#">BUY</a></strong></p>
 		      </div>
 		    </div>
 		    <div class="col-sm-4 third">
 		      <div class="thumbnail test">
-		        <img src="img/emery.png" alt="ocean">
+		        <img class="surfboard-rotate" src="img/emery.png" alt="ocean">
 		        <p class="name"><strong>Agency GROOM<br class="text-color">$670<br><a href="#">BUY</a></strong></p>
 		      </div>
          </div>
     	</div>
     	<button type="button" class="bttn btn-light show-more">SHOW  MORE</button>
  	</section>
-    <section class="section-four">
+    <section class="section-four" id="places">
     	<div class="container-again">
 		  <div class="row">
 		    <div class="col">
@@ -134,16 +135,14 @@
             </p>
              <button type="button" class="bttn btn-light">READ   MORE</button>
 		    </div>
-		    <div class="col">
-		      <img src="img/right.jpg" alt="image">
+		    <div class="col hover1">
+		   		<figure><img class="surfer-boy" src="img/right.jpg" alt="image"></figure>
 		    </div>
         </div>
-    </section>
-     <section class="section-five" id="places">
         <div class="container-again">
 		  <div class="row">
-		    <div class="col">
-		      <img class="image-to-move" src="img/small.jpg" alt="iamge">
+		    <div class="col hover1">
+		    	<figure><img class="image-to-move beach-img" src="img/small.jpg" alt="iamge"></figure> 
 		    </div>
 		    <div class="col">
 		     <h2 class="padding-text text-md-left">Point Break</h2>
@@ -170,7 +169,7 @@
                 <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
               </div>
               <div class="col-12 col-md-3">
-                <button type="submit" class="btn btn-block btn-lg btn-primary">></button>
+                <a href="#" class="button" id="button-1">></a>
               </div>
             </div>
           </form>
@@ -181,8 +180,11 @@
     <section class="section-seven">
     	<div class="container">
 		  <div class="row">
-		    <div class="col">
-		      <img src="img/last.jpg" alt="beach">
+		    <div class="col camp">
+		      <img class="squad-img" src="img/last.jpg" alt="beach">
+		      <div class="overlay">
+    			<div class="text">OUR CAMP</div>
+  			  </div>
 		    </div>
 		    <div class="col">
 		      <span class="section-heading-upper text-md-left text-muted move-left">OUR CAMP</span>
@@ -194,10 +196,10 @@
     </section>
     <footer>
     <a class="navbar-brand nav" href="#"><img class="loggo" src="img/loggo.png" alt="logo"></a>
-    <nav class="navbar navbar-expand-sm navbar-light" data-toggle="affix">
+    <nav class="navbar navbar-expand-sm navbar-light last-nav" data-toggle="affix">
     <div class="mx-auto d-md-flex d-block flex-md-nowrap">
         <div class="collapse navbar-collapse text-center" id="navbarsExample11">
-            <ul class="navbar-nav d-flex ">
+            <ul class="navbar-nav d-flex">
                 <li class="nav-item">
                     <a class="nav-link" href="#">STORIES</a>
                 </li>
@@ -214,7 +216,7 @@
         </div>
     </div>
     </nav>
-    <div class="container">
+    <div class="container last-icons">
       <ul class="list-inline mb-5 icons-ul">
         <li class="list-inline-item">
         	<a class="social-link rounded-circle text-white" href="https://twitter.com/">
@@ -234,10 +236,8 @@
       </ul>
     </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
 </body>
 </html>

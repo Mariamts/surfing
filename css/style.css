@@ -123,13 +123,25 @@ body{
 	margin-left: 590px;
 }
 
+.containerr{
+	margin-top: 25px;
+}
+
 .icons-li{
-	margin-top: 490px;
+	margin-top: 500px;
 	margin-left: 50px;
 }
 
 .icons{
 	margin-left: 50px;
+}
+
+.twit-icon{
+	margin-bottom: 25px;
+}
+
+.tumb-icon{
+	margin-bottom: 25px;
 }
 
 
@@ -207,6 +219,11 @@ body{
 	padding: 30px;
 }
 
+.video{
+	width:700px;
+    height:400px;
+}
+
 
 /*section three*/
 
@@ -253,6 +270,46 @@ body{
 	margin-left: 30px;
 }
 
+/*section six*/
+
+
+#button-1{
+  border: 2px solid lightblue;
+  color: lightblue;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#button-1:before{
+  content: "TAP";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  background-color: lightblue;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#button-1:hover{
+  color: white;
+}
+
+#button-1:hover:before{
+  left: 0;
+}
+
+.button{
+  display: inline-block;
+  padding: 10px 20px;
+  position: relative;
+  color: #ecf0f1;
+}
 
 
 /*section seven*/
@@ -261,6 +318,57 @@ body{
 .move-left{
 	float: left;
 }
+
+.camp {
+  position: relative;
+  width: 50%;
+}
+
+.squad-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+
+.camp:hover .squad-img {
+  opacity: 0.3;
+}
+
+.camp:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 
 
 /*--------------------------------------------------------------
@@ -313,8 +421,76 @@ body{
   .containerr{
   	display: none;
   }
-  
+  .last-nav{
+    display: none;
+  }
+  .shop{
+  	display: none;
+  }
+  .last-icons{
+  	display: none;
+  }
+  .zoma{
+  	width: 40%;
+  }
+  .main{
+  	width: 100%;
+  }
+  .boardz{
+  	display: flex;
+  	flex-direction: column;
+  	width: 100%;
+  	margin-left: 300px;
+  }
+  .video{
+  	width: 350px;
+  	height: 200px;
+  	margin-left: 300px;
+  }
+  .picture{
+  	width: 350px;
+  	height: 200px;
+  }
+  .surfer-boy{
+  	width: 100%;
+  }
+  .beach-img{
+  	width: 85%;
+  }
+  .squad-img{
+  	width: 100%;
+  }
+}
 
+@media (max-width: 1024px) {
+  .rotate-text{
+  	display: none;
+  }
+  .containerr{
+  	display: none;
+  }
+  .video{
+  	width: 350px;
+  	height: 200px;
+  	margin-left: 300px;
+  	margin-top: -160px;
+  }
+  .picture{
+  	width: 350px;
+  	height: 200px;
+  }
+  .surfer-boy{
+  	width: 100%;
+  }
+  .beach-img{
+  	width: 85%;
+  }
+  .squad-img{
+  	width: 100%;
+  }
+ 
+
+}
 
 
 @media (max-width: 1200px) {
@@ -322,19 +498,6 @@ body{
     width: 45%;
   }
 }
-
-@media only screen and (min-width: 768px){
-	.first{
-		width: 33.33%
-	}
-    .second{
-    	width: 33.33%
-    }
-    .third{
-    	width: 33.33%
-    }
-}
-
 
  
 /*animations*/
@@ -344,6 +507,14 @@ body{
 
 }
 
+.surfboard-rotate{
+	transition-duration: 0.5s;
+}
+
+.surfboard-rotate:hover{
+	transform: rotate(360deg);
+}
+
 .loggo:hover{
 	transform: rotate(360deg);
 }
@@ -351,7 +522,6 @@ body{
 .social-link img:hover{
 	transform: scale(1.3);
 }
-
 
 .logo{
 	animation:anim 5s infinite 0.2s; 
@@ -369,14 +539,37 @@ body{
 
 }
 
-
-
-
-
-
-
-
-
+.hover1 figure {
+	position: relative;
+}
+.hover1 figure::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.hover1 figure:hover::before {
+	-webkit-animation: shine 1s;
+	animation: shine 1s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
 
 
 
